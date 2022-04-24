@@ -10,24 +10,31 @@
     <script src="./script.js" defer></script>
   </head>
   <body>
-    <div class="header"></div>
+    <div class="header">
+            <img src="./images/head-image.png" alt="kwai-pic" id="head-image">
+      <div class="heading">Etch A Sketch</div>
+      <img src="./images/head-image.png" alt="kwai-pic" id="head-image">
+    </div>
     <div class="main">
       <div class="container">
         <div class="toolbar">
           
            <button> <img class="reset" src="./images/reset.png" alt="reset_button"></button>
            <input type="color" id="color">
-           <div class="gridSizeChooser"><input type="range" min="1"  max="64" value="16" id="gridSize" oninput="this.nextElementSibling.value = this.value">
+           <div class="gridSizeChooser"><label for="gridSize">Grid Size</label> <input type="range" min="1"  max="64" value="16" id="gridSize" oninput="this.nextElementSibling.value = this.value">
             <output style="font-weight: bolder;">24</output>
-            <span>- Gride Size</span>
+            
            </div>
-           
+           <button class="rainbow">Rainbow color</button>
            <button><img src="./images/eraser.png" alt="eraser" class="eraser"></button> 
 
         </div>
         <div class="canvas"></div>
       </div>
     </div>
-    <div class="footer"></div>
+    <div class="footer">
+      <div class="made">Made with ❤️ by Tribhuwan Joshi</div>
+
+    </div>
   </body>
 </html>
