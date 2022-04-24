@@ -5,15 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pixi</title>
-    <link rel="icon" href="icons/favicon.jpg" />
+    <link rel="icon" href="images/favicon.jpg" />
     <link rel="stylesheet" href="./style.css" />
-    <script href="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
   <body>
     <div class="header"></div>
     <div class="main">
       <div class="container">
-        <div class="toolbar"></div>
+        <div class="toolbar">
+          
+           <button> <img class="reset" src="./images/reset.png" alt="reset_button"></button>
+           <input type="color" id="color">
+           <div class="gridSizeChooser"><input type="range" min="1"  max="64" value="16" id="gridSize" oninput="this.nextElementSibling.value = this.value">
+            <output style="font-weight: bolder;">24</output>
+            <span>- Gride Size</span>
+           </div>
+           
+           <button><img src="./images/eraser.png" alt="eraser" class="eraser"></button> 
+
+        </div>
         <div class="canvas"></div>
       </div>
     </div>
